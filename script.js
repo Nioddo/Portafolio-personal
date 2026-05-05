@@ -12,15 +12,19 @@ menu.querySelectorAll('a').forEach(link => {
 });
 
 const form = document.getElementById('form');
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
+form.addEventListener('submit', () => {
     const btn = form.querySelector('button');
-    btn.textContent = 'Enviado';
-    btn.style.background = '#16a34a';
-    setTimeout(() => {
-        btn.textContent = 'Enviar';
-        btn.style.background = '';
-        form.reset();
-    }, 3000);
+    btn.textContent = 'Enviando...';
+    btn.disabled = true;
+});
+
+// Header transparente que aparece al hacer scroll
+const header = document.querySelector('header');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 40) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
 });
 

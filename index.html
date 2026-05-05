@@ -1,23 +1,25 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" style="scroll-behavior: smooth;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nicolas Oddo</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
-<body>
+<body class="minimal">
 
     <header>
-        <nav id="nav">
-            <div class="logo">NO.</div>
-            <ul id="menu">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+        <nav id="nav" class="nav-minimal">
+            <div class="logo">NIODDO.</div>
+            <ul id="menu" class="menu-minimal">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li><a href="#tecnologias" class="nav-link">Tecnologías</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
             </ul>
-            <div id="hb">
+            <div id="hb" class="hb-minimal">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -26,84 +28,230 @@
     </header>
 
     <main>
-
-        <section id="inicio">
+        <section id="inicio" class="hero-section">
             <div class="texto">
-                <p>Hola, soy</p>
-                <h1>Nicolas Oddo</h1>
-                <h2>[ Tu rol o título ]</h2>
-                <p>[ Una frase corta sobre vos ]</p>
+                <p class="saludo">Hola, soy</p>
+                <h1 class="nombre">Nicolas Oddo</h1>
+                <h2 class="rol">Técnico en computacion</h2>
+                <p class="frase">Apasionado por diseñar soluciones digitales simples y elegantes.</p>
                 <div class="botones">
-                    <a href="#proyectos" class="btn">Ver proyectos</a>
-                    <a href="#contacto" class="btn-borde">Contactame</a>
+                    <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+                    <a href="#contacto" class="btn btn-outline">Contactame</a>
                 </div>
             </div>
-            <div id="foto"></div>
+            <div id="foto" class="foto-perfil"></div>
         </section>
 
-        <section id="sobre-mi">
+        <section id="sobre-mi" class="sobre-mi-section">
             <h3>Sobre mí</h3>
-            <p>[ Escribí quién sos, qué estudiás o en qué trabajás. ]</p>
-            <p>[ Algo personal, tus intereses o lo que te gusta. ]</p>
-            <ul class="datos">
-                <li><strong>Edad:</strong> [ Tu edad ]</li>
-                <li><strong>Ciudad:</strong> [ Tu ciudad ]</li>
-                <li><strong>Email:</strong> [ Tu email ]</li>
-            </ul>
-            <a href="#" class="btn" download>Descargar CV</a>
+            <div class="sobre-mi-grid">
+                <div class="sobre-mi-texto">
+                    <p>Soy estudiante del Politecnico Modelo, enfocado en tecnico en computacion.</p>
+                    <p>Estoy rindiendo Uba XXI (a la vez que hago 6to año), para entrar a la carrera de Ingeniería en Informatica.</p>
+                    <ul class="datos">
+                        <li><strong>Edad:</strong> 18</li>
+                        <li><strong>Ciudad:</strong> Buenos Aires</li>
+                        <li><strong>Email:</strong> nicolas.oddo@gmail.com</li>
+                        <li><strong>Experiencia Laboral:</strong> Asistente de analista de datos (en Excel Consulting)</li>
+                    </ul>
+                </div>
+                <div class="sobre-mi-img"></div>
+            </div>
         </section>
 
-        <section id="proyectos">
+                <section id="tecnologias" class="tecnologias-section">
+            <h3>Tecnologías</h3>
+            <p class="tecnologias-desc">Lenguajes y herramientas que utilizo en mis proyectos.</p>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <i class="devicon-html5-plain colored"></i>
+                    <span>HTML</span>
+                </div>
+                <div class="tech-item">
+                    <i class="devicon-css3-plain colored"></i>
+                    <span>CSS</span>
+                </div>
+                <div class="tech-item">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-item">
+                    <i class="devicon-php-plain colored"></i>
+                    <span>PHP</span>
+                </div>
+                <div class="tech-item">
+                    <i class="devicon-java-plain colored"></i>
+                    <span>Java</span>
+                </div>
+                <div class="tech-item">
+                    <i class="devicon-python-plain colored"></i>
+                    <span>Python</span>
+                </div>
+                <div class="tech-item">
+                    <i class="devicon-arduino-plain colored"></i>
+                    <span>Arduino</span>
+                </div>
+                <div class="tech-item">
+                    <i class="devicon-godot-plain colored"></i>
+                    <span>Godot</span>
+                </div>
+                <div class="tech-item">
+                    <i class="devicon-nginx-original colored"></i>
+                    <span>Nginx</span>
+                </div>
+            </div>
+        </section>
+        
+        <section id="proyectos" class="proyectos-section">
             <h3>Proyectos</h3>
-            <div class="cards">
+            <div class="cards cards-minimal">
 
-                <div class="card" id="img-p1">
-                    <h4>[ Nombre del proyecto ]</h4>
-                    <p>[ Descripción breve ]</p>
-                    <a href="#" target="_blank">Demo</a>
-                    <a href="#" target="_blank">GitHub</a>
+                <div class="card card-minimal" id="img-p1">
+                    <div class="card-img"></div>
+                    <div class="card-body">
+                        <span class="card-tag">Frontend/Arduino</span>
+                        <h4>Proyecto Luna</h4>
+                        <p>Proyecto interactivo web y de Arduino sobre la Tierra y la Luna.</p>
+                        <div class="card-links">
+                            <a href="https://github.com/Nioddo/Proyecto_luna.git" target="_blank" class="card-link">Demo ↗</a>
+                            <a href="https://github.com/Nioddo" target="_blank" class="card-link">mi GitHub ↗</a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="card" id="img-p2">
-                    <h4>[ Nombre del proyecto ]</h4>
-                    <p>[ Descripción breve ]</p>
-                    <a href="#" target="_blank">Demo</a>
-                    <a href="#" target="_blank">GitHub</a>
+                <div class="card card-minimal" id="img-p2">
+                    <div class="card-img"></div>
+                    <div class="card-body">
+                        <span class="card-tag">PHP</span>
+                        <h4>Street Tango</h4>
+                        <p>Web que puedes acceder al catálogo y compra de discos de Street Tango, además de ver sus novedades e historia.</p>
+                        <div class="card-links">
+                            <a href="https://github.com/Nioddo/Street-tango__oddo-seijas.git" target="_blank" class="card-link">Demo ↗</a>
+                            <a href="https://github.com/Nioddo" target="_blank" class="card-link">mi GitHub ↗</a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="card" id="img-p3">
-                    <h4>[ Nombre del proyecto ]</h4>
-                    <p>[ Descripción breve ]</p>
-                    <a href="#" target="_blank">Demo</a>
-                    <a href="#" target="_blank">GitHub</a>
+                <div class="card card-minimal" id="img-p3">
+                    <div class="card-img"></div>
+                    <div class="card-body">
+                        <span class="card-tag">Videojuego</span>
+                        <h4>Oddo Bullet Hell STW</h4>
+                        <p>Videojuego desarrollado con Godot, con mecánicas de disparo y enemigos desafiantes.</p>
+                        <div class="card-links">
+                            <a href="https://github.com/Nioddo/Oddo-Bullet-hell-STW.git" target="_blank" class="card-link">Demo ↗</a>
+                            <a href="https://github.com/Nioddo" target="_blank" class="card-link">mi GitHub ↗</a>
+                        </div>
+                    </div>
                 </div>
 
+                <div class="card card-minimal" id="img-p1">
+                    <div class="card-img"></div>
+                    <div class="card-body">
+                        <span class="card-tag">JAVA</span>
+                        <h4>Ejercicios completos de JAVA</h4>
+                        <p>Conjunto de ejercicios prácticos para aprender y reforzar conceptos de programación en Java.</p>
+                        <div class="card-links">
+                            <a href="https://github.com/Nioddo/Labo2025_oddo_seijas.git" target="_blank" class="card-link">Demo ↗</a>
+                            <a href="https://github.com/Nioddo" target="_blank" class="card-link">mi GitHub ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-minimal" id="img-p2">
+                    <div class="card-img"></div>
+                    <div class="card-body">
+                        <span class="card-tag">Nginx</span>
+                        <h4>Prueba Nginx</h4>
+                        <p>Proyecto de configuración de un servidor Nginx con múltiples sitios y un proxy inverso hacia una aplicación en Java Spring Boot.</p>
+                        <div class="card-links">
+                            <a href="https://github.com/Nioddo/tp-nginx-6-ABR.git" target="_blank" class="card-link">Demo ↗</a>
+                            <a href="https://github.com/Nioddo" target="_blank" class="card-link">mi GitHub ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-minimal" id="img-p3">
+                    <div class="card-img"></div>
+                    <div class="card-body">
+                        <span class="card-tag">Python</span>
+                        <h4>Detector de Mentiras</h4>
+                        <p>Aplicación desarrollada en Python para detectar patrones de mentira mediante análisis de texto y comportamiento.</p>
+                        <div class="card-links">
+                            <a href="https://github.com/Nioddo/detector-de-mentiras.git" target="_blank" class="card-link">Demo ↗</a>
+                            <a href="https://github.com/Nioddo" target="_blank" class="card-link">mi GitHub ↗</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="contacto">
+
+
+        <section id="contacto" class="contacto-section">
             <h3>Contacto</h3>
-            <p>[ Invitá a que te escriban ]</p>
-            <form id="form">
-                <input type="text" placeholder="Tu nombre" required>
-                <input type="email" placeholder="Tu email" required>
-                <textarea placeholder="Tu mensaje" rows="5" required></textarea>
-                <button type="submit" class="btn">Enviar</button>
+            <p>¿Te gustaría trabajar conmigo? ¡Escribime!</p>
+            <form id="form" class="form-minimal" action="https://formsubmit.co/nicolasoddo07@gmail.com" method="POST">
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu email" required>
+                <textarea name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
+                <input type="hidden" name="_subject" value="Nuevo mensaje desde tu portafolio">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="">
+                <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
-            <div class="redes">
-                <a href="#" target="_blank">LinkedIn</a>
-                <a href="#" target="_blank">GitHub</a>
-                <a href="#" target="_blank">Instagram</a>
+            <div class="redes redes-minimal">
+                <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/Nioddo" target="_blank" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    GitHub
+                </a>
+                <a href="https://www.instagram.com/nicoo.oddo" target="_blank" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    Instagram
+                </a>
             </div>
         </section>
-
     </main>
 
-    <footer>
-        <p>Nicolas Oddo &copy; 2026</p>
+    <footer class="footer-minimal">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <span class="logo">NIODDO.</span>
+                <p>Diseñando experiencias digitales simples y elegantes.</p>
+            </div>
+            <div class="footer-links">
+                <span class="footer-title">Navegación</span>
+                <a href="#inicio">Inicio</a>
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+            <div class="footer-links">
+                <span class="footer-title">Redes</span>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/Nioddo" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    GitHub
+                </a>
+                <a href="https://www.instagram.com/nicoo.oddo" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    Instagram
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Nicolas Oddo &copy; 2026</p>
+            <p>Hecho con <span class="footer-heart">♥</span> en Buenos Aires</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
-
 </body>
 </html>
